@@ -12,7 +12,7 @@ const Signin = () => {
   const handleSignin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/signin', { email, password });
+      const response = await axios.post('https://weather-app-76ub.onrender.com/api/auth/signin', { email, password });
       localStorage.setItem('token', response.data.token);
       navigate('/');
       navigate(0);

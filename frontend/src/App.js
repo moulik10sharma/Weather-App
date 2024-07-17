@@ -23,7 +23,7 @@ const App = () => {
   const handleSaveLocation = async (location) => {
     try {
       const token = localStorage.getItem('token');
-      await axios.post('http://localhost:5000/api/location', { location }, {
+      await axios.post('https://weather-app-76ub.onrender.com/api/location', { location }, {
         headers: {
           'Authorization': token
         }

@@ -13,7 +13,7 @@ const Signup = () => {
     try {
       console.log('Signing up with email:', email);
       console.log('Signing up with password:', password);
-      const response = await axios.post('http://localhost:5000/api/auth/signup', { email, password });
+      const response = await axios.post('https://weather-app-76ub.onrender.com/api/auth/signup', { email, password });
       console.log('Response after signup:', response.data);     
       localStorage.setItem('token', response.data.token);
       navigate('/');

@@ -10,7 +10,7 @@ const SavedLocations = ({ onSelectLocation }) => {
   const handleDeleteLocation = async (locationId) => {
     try {
       const token = localStorage.getItem('token');
-      await axios.delete(`http://localhost:5000/api/location/${locationId}`, {
+      await axios.delete(`https://weather-app-76ub.onrender.com/api/location/${locationId}`, {
         headers: {
           'Authorization': token
         }
@@ -26,7 +26,7 @@ const SavedLocations = ({ onSelectLocation }) => {
     const fetchWeatherData = async () => {
       try {
         const token = localStorage.getItem('token');
-        const savedLocationsResponse = await axios.get('http://localhost:5000/api/location', {
+        const savedLocationsResponse = await axios.get('https://weather-app-76ub.onrender.com/api/location', {
           headers: {
             'Authorization': token
           }
