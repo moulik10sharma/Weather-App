@@ -100,8 +100,6 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 ## Contact
 For any questions or suggestions, feel free to open an issue or contact the project maintainer:
 
- - Shubham Jaiswal
- - [GitHub Profile](https://github.com/Shubham-Jaiswal-31)
- - [Email](mailto:jaiswalshubham502@gmail.com)
+🥲
 
 Enjoy using the Weather App!
